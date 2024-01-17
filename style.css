@@ -1,0 +1,127 @@
+header {
+    height: 10vh;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: end;
+}
+nav {
+    background-color: #d3d3d3;
+    display: flex;
+    height: 5vh;
+    flex-basis: 60%;
+    padding-left: 20%;
+    justify-content: space-between;
+    align-items: end;
+}
+.logo {
+    height: 10vh;
+    background-color: #d3d3d3;
+    flex-basis: 40%;
+    display: flex;
+    font-size: 2em;
+}
+.logo__text {
+    margin: auto;
+}
+.nav__link {
+    display: block;
+    height: 4vh;
+    padding-left: 1em;
+    line-height: 1.5em;
+    width: 33.3%;
+    color: black;
+}
+.nav__link_activated {
+    color: #ffff00;
+    background-color: #808080;
+}
+.gallery {
+    width: 80vw;
+    height: 40vh;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 0.1%;
+    gap: 0.1%;
+}
+.gallery__picture {
+    flex-basis: 25%;
+}
+.gallery__picture img {
+    height: 100%;
+    width: 100%;
+}
+.gallery__picture_focused {
+    flex-basis: 50%;
+}
+.advantages {
+    width: 60vw;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.advantages__element {
+    flex-basis: 30%;
+}
+.advantages__picture {
+    width: 2em;
+    margin: 0 auto;
+}
+.advantages__picture img {
+    width: 100%;
+}
+.advantages__text {
+    margin-top: 5%;
+}
+.articles {
+    width: 70vw;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5vh;    
+    flex-direction: column;
+    gap: 5vh;
+}
+.article{
+    height: 20vh; 
+    display: grid;
+}
+.article:nth-child(2n - 1) {
+    grid-template-areas: 
+    "T T T T   T T T T   I I I I"
+    "P P P P   P P P P   I I I I";
+}
+.article:nth-child(2n) {
+    grid-template-areas: 
+    "I I I I   T T T T   T T T T"
+    "I I I I   P P P P   P P P P";
+}
+.article__title {
+    font-size: 2em;
+    grid-area: T;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article__text {
+    grid-area: P;
+    padding: 0 2em;
+}
+.article__img {
+    grid-area: I;
+    height: inherit;
+    width: auto;
+}
+.article__img img {
+    height: 100%;
+}
+
+footer {
+    margin-top: 10vh;
+    height: 3em;
+    padding: 0 2em;
+    background-color: #808080;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
